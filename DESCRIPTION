@@ -1,0 +1,13 @@
+Package: omekaR
+Type: Package
+Title: omekaR: A client for the Omeka API
+Version: 0.1.9000
+Authors@R: c(person("Lincoln", "Mullen",
+    role = c("aut", "cre"),
+    email = "lincoln@lincolnmullen.com"))
+Description: This package provides an API client for the Omeka publishing
+    platform for scholars, libraries, museums, and archives.
+License: MIT + file LICENSE
+Roxygen: list(wrap = FALSE)
+URL: https://github.com/lmullen/omekaR
+BugReports: https://github.com/lmullen/omekaR/issues
