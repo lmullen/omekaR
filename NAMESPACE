@@ -2,5 +2,6 @@
 
 export(omeka_endpoint)
 export(omeka_get)
+export(omeka_key)
 import(httr)
 import(jsonlite)
