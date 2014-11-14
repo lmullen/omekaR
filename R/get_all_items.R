@@ -38,7 +38,7 @@ get_all_items <- function(wait = 10) {
 
   # Get the remaining pages
   lapply(2:last, function(x) {
-    Sys.sleep(10)
+    Sys.sleep(wait)
     message(paste("Requesting page", x, "of", last))
     query$page <- x
     req <- GET(end, path = path, query = query)
