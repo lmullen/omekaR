@@ -3,10 +3,20 @@
 \alias{get_all_items}
 \title{Get all Omeka items}
 \usage{
-get_all_items()
+get_all_items(wait = 10)
+}
+\arguments{
+\item{wait}{The number of seconds to wait between requests. No matter what
+value you pass the function, it will wait at least 10 seconds between
+requests.}
+}
+\value{
+A list of Omeka items
 }
 \description{
 Get all the Omeka items in a site. This function tries to get all the items
 responsibly by waiting between requests, but be careful with this function.
+You may irritate the site owner, get your IP address blocked, or have your
+API key revoked.
 }
 

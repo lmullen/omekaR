@@ -48,3 +48,5 @@ element_texts(war_dept)
 element_texts(war_dept, filter = "Content Experts")
 element_texts(war_dept, filter = "Technology Used")
 ```
+
+There is a function `get_all_items()` which will download all the items on an Omeka site, but use this with caution.

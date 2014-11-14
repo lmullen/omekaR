@@ -15,4 +15,5 @@ Depends:
     R (>= 3.1.0)
 Imports:
     httr (>= 0.4),
-    jsonlite (>= 0.9.10)
+    jsonlite (>= 0.9.10),
+    stringr (>= 0.6.2)
