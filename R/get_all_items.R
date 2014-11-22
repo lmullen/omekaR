@@ -14,7 +14,8 @@ get_all_items <- function(wait = 10) {
   if(wait < 10) wait <- 10
 
   end <- omeka_endpoint()
-  path <- paste("api", "items", sep = "/")
+  path <- parse_url(end)$path
+  path <- paste(path, "items", sep = "/")
   query <- list(page = 1)
 
   # Only pass the API key if it exists

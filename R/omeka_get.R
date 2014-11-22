@@ -24,7 +24,8 @@
 omeka_get <- function(resource, id = NULL, ...) {
 
   end <- omeka_endpoint()
-  path <- paste("api", resource, id, sep = "/")
+  path <- parse_url(end)$path
+  path <- paste(path, resource, id, sep = "/")
 
   # Only pass the API key if it exists
   key <- omeka_key()
